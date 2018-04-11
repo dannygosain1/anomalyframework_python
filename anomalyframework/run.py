@@ -13,10 +13,11 @@ import local_pyutils
 
 def main(**user_params):
     # Open logging file: stdout
-    logger = local_pyutils.get_logger(__name__)
+    # logger = local_pyutils.get_logger(__name__)
+    local_pyutils.open_stdout_logger()
 
     # Build project files
-    logger.info('Building project files')
+    logging.info('Building project files')
     subprocess.check_call('cmake -Bbuild -H.', shell=True)
     os.chdir('build')
     try:
