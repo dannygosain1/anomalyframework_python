@@ -5,8 +5,8 @@ from math import ceil
 import numpy as np
 import subprocess
 
-from . import liblinear_utils
-import local_pyutils
+from . import liblinear_utils, local_pyutils
+# import local_pyutils
 
 ONE_BASED = 0  # until we don't support the MATLAB version
 # if not ONE_BASED:

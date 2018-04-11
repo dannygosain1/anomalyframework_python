@@ -6,9 +6,9 @@ import shutil
 import subprocess
 import sys
 
-from anomalyframework import shuffle, scoreanomalies_utils, parameters
+from anomalyframework import shuffle, scoreanomalies_utils, parameters, local_pyutils
 
-import local_pyutils
+# import local_pyutils
 
 
 def main(**user_params):

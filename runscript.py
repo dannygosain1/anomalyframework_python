@@ -40,6 +40,7 @@ from anomalyframework import run
 #                                                                    ' doesn\'t exist')
 # infile_features_libsvm = infile_features.replace('.npy', '.train')
 infile_features_libsvm = '../trainFiles/first_run.train' #location of .train file
+lambd = 1.0
 if not os.path.isfile(infile_features_libsvm):
     print('Creating the .train file for {}'.format(infile_features))
     X = np.load(infile_features)

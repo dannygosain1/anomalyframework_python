@@ -1,7 +1,7 @@
 import os
 
-import local_pyutils
-from . import filenames
+# import local_pyutils
+from . import filenames, local_pyutils
 
 # TODO(allie): generate a static class from this file (to enable autocomplete)
 
